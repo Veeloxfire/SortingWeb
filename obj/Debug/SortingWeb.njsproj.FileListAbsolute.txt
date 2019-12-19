@@ -1,0 +1,2 @@
+D:\NodeJS\Sorting\SortingWeb\bin\Microsoft.NodejsTools.WebRole.dll
+D:\NodeJS\Sorting\SortingWeb\obj\Debug\SortingWeb.njsprojAssemblyReference.cache

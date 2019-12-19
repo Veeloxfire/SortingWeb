@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Styling.css" />
+    <title></title>
+</head>
+<body id="main" onload="">
+    <p id="selector"></p>
+    <div>
+        <p>Number of elements</p>
+        <input id="len" type="number" min="0" max="500" value="100" />
+    </div>
+    <div>
+        <p>Speed of Animation</p>
+        <input id="speed" type="number" min="0" max="1000" value="50" />
+    </div>
+    <div>
+        <p>Range</p>
+        <input id="range" type="number" min="0" max="500" value="100" />
+    </div>
+
+    <div id="QuickSortHolder" class="dropdown">
+        <button type="button" id="QuickSort">Quick Sort</button>
+        <select id="QuickSortPartition">
+            <option value="HoarePartition">Hoare Partition</option>
+            <option value="LomutoPartition">Lomuto Partition</option>
+        </select>
+    </div>
+
+    <div id="IntroSortHolder" class="dropdown">
+        <button type="button" id="IntroSort">Intro Sort</button>
+        <select id="IntroSortPartition">
+            <option value="HoarePartition">Hoare Partition</option>
+            <option value="LomutoPartition">Lomuto Partition</option>
+        </select>
+    </div>
+    <button type="button" id="InLineMergeSort">In-Line Merge Sort</button>
+    <button type="button" id="HeapSort">Heap Sort</button>
+    <button type="button" id="InsertionSort">Insertion Sort</button>
+    <button type="button" id="BubbleSort">Bubble Sort</button>
+    <button type="button" id="SelectionSort">Selection Sort</button>
+    <button type="button" id="Start">Start</button>
+    <button type="button" id="test">Test</button>
+    <canvas id="animation"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Handler.js"></script>
+    <script src="Selector.js"></script>
+    <script src="render.js"></script>
+</body>
+</html>
