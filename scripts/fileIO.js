@@ -8,7 +8,7 @@ exports.filesend = function (res, fileName, path) {
 
     res.sendFile(fileName, options, function (err) {
         if (err) {
-            next(err);
+            throw err;
         }
         else {
 
@@ -19,8 +19,8 @@ exports.filesend = function (res, fileName, path) {
 
 exports.jsonsend = function(res, jsonObject) {
     let jsonString = JSON.stringify(jsonObject);
+    let printString = jsonString.length > 100? jsonString.slice(0, 99) + " ...": jsonString
     res.status(200);
     res.send(jsonString);
-
-    console.log("Json sent: " + jsonString);
+    console.log("Json sent: " + printString);
 }
